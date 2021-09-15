@@ -16,11 +16,11 @@ class Paddle(Turtle):
         self.setpos(position)
 
     def up(self):
-        new_y = self.ycor() + 20
+        new_y = self.ycor() + STEPS
         self.speed("fast")
         self.goto(self.xcor(), new_y)
 
     def down(self):
-        new_y = self.ycor() - 20
+        new_y = self.ycor() - STEPS
         self.speed("fast")
         self.goto(self.xcor(), new_y)
